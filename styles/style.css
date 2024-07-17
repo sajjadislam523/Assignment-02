@@ -11,6 +11,16 @@ body {
     /* background-color: black; */
 }
 
+.btn-primary {
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 16px 40px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+}
+
 /* *{
     height: 0;
     width: 0;
@@ -87,16 +97,6 @@ body {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1em;
     font-weight: 400;
-}
-
-.btn-1 {
-    border-radius: 42px;
-    background: rgb(230, 83, 60);
-    padding: 16px 40px;
-    color: rgb(255, 255, 255);
-    font-size: 1em;
-    font-weight: 600;
-    border: none;
 }
 
 .btn-2 {
@@ -251,6 +251,51 @@ p {
 
 /* Habits section style ends */
 
+/* Joining section style starts */
+
+.extra-mile-container {
+    width: 1060px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+}
+
+.image-container {
+    width: 400px;
+    height: 300px;
+    padding-top: 35px;
+}
+
+.image-container img {
+    width: 90%;
+    height: 90%;
+    border-radius: 18px;
+}
+
+.description-container {
+    width: 443px;
+    margin-left: 54px;
+}
+
+.description-container h2 {
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: 900;
+    margin: 0;
+}
+
+.description-container p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 14px 0 34px 0;
+
+}
+
+/* Joining section style ends */
 
 
 /* Media query */
@@ -260,7 +305,8 @@ p {
         display: none;
     }
 
-    .banner {
+    .banner,
+    .extra-mile-container {
         flex-direction: column;
     }
 
@@ -309,12 +355,15 @@ p {
 
     }
 
-    .btn-1,
+    .btn-primary {
+        padding: 15px 7px;
+    }
+
     .btn-2 {
         padding: 10px 20px;
     }
 
-    .banner-image{
+    .banner-image {
         margin-top: 5px;
     }
 
