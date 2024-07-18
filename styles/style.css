@@ -266,12 +266,12 @@ p {
 .image-container {
     width: 400px;
     height: 300px;
-    padding-top: 35px;
+    padding: 30px;
 }
 
 .image-container img {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     border-radius: 18px;
 }
 
@@ -289,7 +289,7 @@ p {
 
 .description-container p {
     color: rgba(255, 255, 255, 0.5);
-    font-size: 14px;
+    font-size: 0.8em;
     font-weight: 400;
     margin: 14px 0 34px 0;
 
@@ -386,5 +386,25 @@ p {
 
     .habits-description h3 {
         font-size: 2em;
+    }
+
+    .extra-mile-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .description-container{
+        width: 80%;
+        margin: 10px auto;
+        padding-top: 20px;
+    }
+
+    .description-container h2 {
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+    
+    .description-container button {
+        width: 95%;
     }
 }
