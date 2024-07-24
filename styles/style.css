@@ -23,14 +23,14 @@
 }
 
 main {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 /* shared style ends */
 
 /* Header styles */
 .header-container {
-    background: linear-gradient(180.00deg, rgb(0, 0, 0) 0%, rgba(30, 30, 30, 0.8) 50%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(180.00deg, rgb(0, 0, 0) 0%, rgba(30, 30, 30, 0.9) 50%, rgb(0, 0, 0) 100%);
     color: white;
     width: 100%;
     display: flex;
@@ -49,8 +49,9 @@ main {
 .nav-container h2 {
     color: rgb(230, 83, 60);
     font-family: Inter;
-    font-size: 2em;
+    font-size: 2.4em;
     font-weight: 800;
+    font-style: italic;
 }
 
 .icon {
@@ -78,7 +79,7 @@ main {
 }
 
 .banner {
-    margin: 25px auto;
+    margin: 32px auto;
     width: 77%;
     display: flex;
     justify-content: space-between;
@@ -457,6 +458,54 @@ input[type="number"],
 
 /* BMI calculator style ends */
 
+/* Team container style starts */
+
+.team-container {
+    width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 90px 0px;
+}
+
+.team-heading {
+    width: 670px;
+    padding-bottom: 30px;
+}
+
+.team-heading h2 {
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.team-heading p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .8em;
+    font-weight: 400;
+}
+
+.picture-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.team-image {
+    width: 310px;
+    height: 280px;
+    border-radius: 18px;
+    margin: 20px auto;
+
+}
+
+/* Team container style ends */
+
 
 /* Media query */
 
@@ -464,11 +513,7 @@ input[type="number"],
     .nav-container ul {
         display: none;
     }
-
-    .nav-container h2 {
-        margin-left: 65px;
-    }
-
+    
     .icon {
         margin-right: 50px;
         display: block;
@@ -526,7 +571,7 @@ input[type="number"],
     }
 
     .btn-primary {
-        padding: 15px 7px;
+        padding: 15px 15px;
     }
 
     .btn-2 {
@@ -575,6 +620,7 @@ input[type="number"],
 
     .bmi-heading {
         width: 90%;
+        margin-top: 60px;
     }
 
     .bmi-heading h1 {
@@ -612,6 +658,23 @@ input[type="number"],
 
     input[type="number"],
     option {
-        width: 80%;
+        width: 84%;
+    }
+
+    .team-container{
+        width: 350px;
+    }
+
+    .picture-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-heading h2 {
+        font-size: 2em;
+    }
+    
+    .team-heading {
+        width: 300px;
+        padding-bottom: 30px;
     }
 }
