@@ -46,9 +46,8 @@ main {
     margin-top: 50px;
 }
 
-.nav-container h2 {
+.fitness-container {
     color: rgb(230, 83, 60);
-    font-family: Inter;
     font-size: 2.4em;
     font-weight: 800;
     font-style: italic;
@@ -496,15 +495,115 @@ input[type="number"],
     background: rgba(255, 255, 255, 0.1);
 }
 
-.team-image {
+.team-image-container {
     width: 310px;
-    height: 280px;
+    height: 250px;
     border-radius: 18px;
     margin: 20px auto;
+}
 
+.team-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+.name-container {
+    position: relative;
+    color: aliceblue;
+    bottom: 58px;
+    left: 20px;
+    text-align: left;
+}
+
+.name-container h4 {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: 900;
+}
+
+
+.name-container p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .8em;
+    font-weight: 400;
 }
 
 /* Team container style ends */
+
+
+/* Footer style starts */
+
+.footer-container {
+    width: auto;
+    background-color: rgb(34, 34, 34);
+}
+
+.footer-content {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+    text-align: left;
+}
+
+.heading-content {
+    width: 35%;
+}
+
+.heading-content p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .8em;
+    font-weight: 400;
+}
+
+.heading-content h2 {
+    font-size: 4em;
+    padding-bottom: 20px;
+}
+
+.footer-content h3 {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.middle-content p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.end-content p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.horizontal-line {
+    width: 75%;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.ending {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    padding: 35px;
+    margin: 0;
+}
+
+/* Footer style ends */
 
 
 /* Media query */
@@ -513,7 +612,7 @@ input[type="number"],
     .nav-container ul {
         display: none;
     }
-    
+
     .icon {
         margin-right: 50px;
         display: block;
@@ -658,23 +757,33 @@ input[type="number"],
 
     input[type="number"],
     option {
-        width: 84%;
+        width: 77%;
     }
 
-    .team-container{
+    .team-container {
         width: 350px;
     }
 
-    .picture-container{
+    .picture-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
     .team-heading h2 {
         font-size: 2em;
     }
-    
+
     .team-heading {
         width: 300px;
         padding-bottom: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .heading-content {
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
