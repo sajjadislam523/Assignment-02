@@ -854,4 +854,17 @@ input[type="number"],
         width: 100%;
         margin-bottom: 30px;
     }
+
+    .pricing-plans-container h1 {
+        font-size: 2em;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 50%;
+        margin-bottom: 30px;
+    }
 }
