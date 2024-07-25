@@ -598,6 +598,13 @@ input[type="number"],
     text-align: center;
 }
 
+.hr-line {
+    width: 75%;
+    margin: 0 auto;
+    border: 1px solid rgb(230, 83, 60);
+    margin-bottom: 20px;
+}
+
 /* Pricing plan style ends */
 
 /* Footer style starts */
