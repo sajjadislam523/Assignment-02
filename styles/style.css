@@ -303,7 +303,140 @@ p {
 
 }
 
-/* Joining section style ends */
+/* Extra mile section style ends */
+
+/* Training section style starts */
+.training-section {
+    width: 1060px;
+    margin: 60px auto;
+}
+
+
+.trainning-description {
+    width: 36rem;
+    margin-bottom: 50px;
+}
+
+.trainning-description h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.trainning-description p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.training-image-container {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "first second second third"
+        "fourth fourth fifth sixth";
+}
+
+.training-image {
+    padding-bottom: 34%;
+    position: relative;
+    color: aliceblue;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    color: rgb(0, 0, 0);
+    font-size: 0.8em;
+    font-weight: 500;
+    position: relative;
+    top: 7rem;
+    right: 4rem;
+}
+.second {
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    font-weight: 500;
+    position: relative;
+    top: 1rem;
+    right: 9rem;
+}
+.third {
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    font-weight: 500;
+    position: relative;
+    top: 7rem;
+    right: 3rem;
+}
+.fourth {
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    font-weight: 500;
+    position: relative;
+    top: 1rem;
+    left: 8rem;
+}
+.fifth {
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    font-weight: 500;
+    position: relative;
+    top: 7rem;
+    right: 3rem;
+}
+.sixth {
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    font-weight: 500;
+    position: relative;
+    top: 7rem;
+    right: 3rem;
+}
+
+#first {
+    grid-area: first;
+    background-image: url(../images/exercise1.jpg);
+    background-color: rgba(6, 255, 210, 0.5);
+}
+
+
+#second {
+    grid-area: second;
+    background-image: url(../images/exercise2.png);
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+#third {
+    grid-area: third;
+    background-image: url(../images/exercise3.png);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#fourth {
+    grid-area: fourth;
+    background-image: url(../images/exercise4.png);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#fifth {
+    grid-area: fifth;
+    background-image: url(../images/exercise5.jpg);
+    background-color: rgba(66, 255, 0, 0.3);
+}
+
+#sixth {
+    grid-area: sixth;
+    background-image: url(../images/exercise6.jpg);
+    background-color: rgba(0, 71, 255, 0.3);
+}
+
+/* Training section style ends */
 
 /* BMI calculator style starts */
 
@@ -518,26 +651,31 @@ input[type="number"],
     background-size: cover;
     background-blend-mode: overlay;
 }
+
 #cameron {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../images/trainer2.png);
     background-size: cover;
     background-blend-mode: overlay;
 }
+
 #darrell {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../images/trainer3.png);
     background-size: cover;
     background-blend-mode: overlay;
 }
+
 #dainne {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../images/trainer4.png);
     background-size: cover;
     background-blend-mode: overlay;
 }
+
 #cody {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../images/trainer5.png);
     background-size: cover;
     background-blend-mode: overlay;
 }
+
 #theresa {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../images/trainer6.png);
     background-size: cover;
@@ -597,6 +735,7 @@ input[type="number"],
     font-weight: 900;
     margin-bottom: 20px;
 }
+
 .card h2 {
     color: rgb(230, 83, 60);
     font-size: 2em;
@@ -801,6 +940,52 @@ input[type="number"],
         margin: 0 auto;
     }
 
+    .training-section{
+        width: 90%;
+        margin: 60px 20px;
+    }
+
+    .trainning-description {
+        width: 80%;
+    }
+
+    .trainning-description h1 {
+        font-size: 2em;
+    }
+
+    .training-image-container{
+        grid-template-areas: 
+        "first first second"
+        "fourth fifth fifth";
+    }
+
+    .first, .second, .fourth, .fifth{
+        color: rgb(255, 255, 255);
+    }
+
+
+    #third, #sixth{
+        display: none;
+    }
+
+    .first {
+        top: 5rem;
+        right: 2rem;
+    }
+    .second {
+        top: 0rem;
+        left: 1rem;
+    }
+    
+    .fourth {
+        top: 4.5rem;
+        left: -1rem;
+    }
+    .fifth {
+        top: 5rem;
+        right: 2rem;
+    }
+
     .description-container {
         width: 80%;
         margin: 10px auto;
@@ -874,6 +1059,11 @@ input[type="number"],
     .team-heading {
         width: 300px;
         padding-bottom: 30px;
+    }
+
+    #jorme,
+    #dainne {
+        display: none;
     }
 
     .footer-content {
